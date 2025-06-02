@@ -1,5 +1,6 @@
 import { get } from "http";
 import { getBalanceTool } from "./getBalance";
+import { sendTransactionTool } from "./sendTransaction";
 
 export interface ToolConfig<T=any> {
     definition: {
@@ -19,4 +20,5 @@ export interface ToolConfig<T=any> {
 
 export const tools: Record<string, ToolConfig> = {
     get_balance: getBalanceTool,
+    send_transaction: sendTransactionTool,
 }

@@ -15,6 +15,7 @@ export async function createAssistant(client: OpenAI): Promise<Assistant> {
         You can use the following tools to assist you:
 
         -get_balance: Get the balance of your crypto wallet.
+        -send_crypto: Send cryptocurrency to another wallet.
 
         When you have the balance also refer to the cybernetics you can use to buy or upgrade with them.
         `,
